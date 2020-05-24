@@ -1,0 +1,167 @@
+body {
+    background-color: #16A086;
+    margin: 0;
+    font-family: Helvetica;
+    color: white;
+    line-height: 30px;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    animation: fadeIn 3s;
+}
+
+.table-container{
+    width: 100%;
+}
+
+.title{
+    background-color: #0f6177;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    min-width: 300px;
+    text-align: center;
+}
+
+hr{
+    margin: 0;
+    border: solid 1px #0f6177;
+}
+
+.profile{
+    width: 50%;
+}
+
+.profile img{
+    width: 170px;
+    float: left;
+    margin-right: 15px;
+}
+
+.table-container td{
+    vertical-align: top;
+    padding: 15px;
+}
+
+.skill .content{
+    background-color: white;
+    color: #333333;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.skill ul{
+    margin: 0;
+    list-style: none;
+}
+
+.skill li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f1f1f1;
+}
+
+.skill .level{
+    background-color: #0f6177;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.table{
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th{
+    background-color: #088389;
+    padding: 10px 15px;
+}
+
+.table td{
+    padding: 10px 15px;
+    color: #393939;
+}
+
+.table tr:nth-child(even){
+    background-color: white;
+}
+
+.table tr:nth-child(odd){
+    background-color: #dfdfdf;
+}
+
+.project .content{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.project img{
+    width: 100%;
+}
+
+footer{
+    background-color: white;
+    padding: 15px 0px;
+}
+
+input[type="text"], textarea{
+    outline: none;
+    padding: 10px 20px;
+    background-color: #e8e8e8;
+    font-family: Helvetica;
+    border: solid 3px #e8e8e8;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+input[type="text"]:focus, textarea:focus{
+    background-color: white;
+    border: solid 3px #088389;
+    transition: 0.5s;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"]{
+    background-color:#088389;
+    border-bottom: solid 2px #036a6f;
+}
+
+button[type="reset"]{
+    background-color:#d12f2f;
+    border-bottom: solid 2px #af1f1f;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+

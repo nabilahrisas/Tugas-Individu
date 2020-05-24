@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Journey</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <center>
+            <h1>My Journey</h1>
+            </center>
+
+            <!-- Table Container-->
+            <table class="table-container">
+             <tr>
+                 <!-- My Profile -->
+                 <td class="profile">
+                     <hr>
+                    <h1 class="title">My Profile</h1>
+
+                    <div>
+
+                        <img src="image/foto.jpg" alt="">
+                        <span>
+                            Nama saya adalah Nabilah Risa Savitri, lahir di Lumajang, 19 Januari 2000, 
+                            saya adalah anak pertama dari dua  bersaudara, buah dari pasangan Samsul Bakhri 
+                            dan Yusrini Dwi Astuti. Ayah dan ibu saya adalah seorang PNS di sebuah instansi 
+                            pemerintah yang ada di Lumajang. Rumah saya beralamat di Jalan Pisang Ambon No. 3 
+                            Lumajang. Sekarang saya sedang menempuh S1 di Universitas Negeri Surabaya jurusan 
+                            Teknik Informatika.
+                        </span>
+                    </div>
+
+                 </td>
+                 <!-- My Skill -->
+                 <td class="skill">
+                    <hr>
+                    <h1 class="title">My Skill</h1>
+
+                    <div class="content">
+                        <ul>
+
+                            <li>
+                                Pemrograman Web
+                                <div class="level" style="width:8%">
+                                    8%
+                                </div>
+                            </li>
+                            
+                            <li>
+                                Jaringan Komputer
+                                <div class="level" style="width:12%">
+                                    12%
+                                </div>
+                            </li>
+                            
+                            <li>
+                                Teknologi Basis Data
+                                <div class="level" style="width:20%">
+                                    20%
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                 </td>
+             </tr> 
+             <tr>
+                 <!-- My Experience -->
+                 <td>
+                    <hr>
+                    <h1 class="title">My Experience</h1>
+                    <div>
+                        Pengalaman saya dalam bidang IT maupun bidang yag lain masih belum ada, 
+                        disebabkan oleh beberapa faktor.  Oleh karena itu, untuk sekarang saya 
+                        akan memperdalam ilmu saya, baik itu materi kuliah maupun belajar mandiri 
+                        tentang materi-materi yang lain. Pengalaman ini akan saya pergunakan 
+                        nantinya untuk mendapatkan pekerjaan yang sesuai dengan minat dan bakat saya.
+                    </div>
+                 </td>
+                 <!-- My Education -->
+                 <td>
+                    <hr>
+                    <h1 class="title">My Education</h1>
+                    <div>
+                        Riwayat pendidikan saya adalah sebagai berikut :
+                    </div>
+                    
+                    <table class="table">
+                        <tr>
+                            <th>No</th>
+                            <th>Education</th>
+                            <th>Year</th>
+                        </tr>
+
+                        <tr>
+                            <td>1.</td>
+                            <td>SD Al-Ikhlash Lumajang</td>
+                            <td>2012</td>
+                        </tr>
+
+                        <tr>
+                            <td>2.</td>
+                            <td>SMPN 01 Sukodono Lumajang</td>
+                            <td>2015</td>
+                        </tr>
+
+                        <tr>
+                            <td>3.</td>
+                            <td>SMA Negeri 1 Lumajang</td>
+                            <td>2018</td>
+                        </tr>
+                    </table>
+                 </td>
+             </tr> 
+             <tr>
+                 <!-- My Project-->
+                 <td class="project" colspan="2">
+                    <hr>
+                    <h1 class="title">My Project</h1>
+
+                    <div>
+                        <div class="content">
+                            <img src="image/project1.png" alt="">
+                            <p>
+                            Project ini merupakan sebuah project yang bernama RakIT, dimana user dapat
+                            mencari kebutuhan informasi seputar IT dan perangkat-perangkat keras IT. RakIT 
+                            diharapkan dapat mempermudah pencarian dengan tema IT.
+                            </p>
+                        </div>
+                        <div class="content">
+                            <img src="image/project2.png" alt="">
+                            <p>
+                            Project ini merupakan sebuah project yang bernama kalkulator sederhana. Dimana
+                            kalkulator ini berbasis GUI. Pembuatan kalkulator sederhana ini dibuat pada
+                            aplikasi Visual Studio 2019.
+                            </p>
+                        </div> 
+                    </div>
+                 </td>
+             </tr> 
+            </table>
+        </div>
+
+        <footer>
+            <div class="container">
+                <form action="index.html" method="post">
+
+                    <hr>
+                    <h1 class="title">Contact Me</h1>
+
+                    <div class="form-group">
+                        <input type="text" name="" value="" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="" value="" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" name="button">Send</button>
+                        <button type="reset" name="button">Clear</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
+

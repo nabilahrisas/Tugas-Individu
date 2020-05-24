@@ -1,0 +1,39 @@
+Imports System.Data
+Imports System.Data.OleDb
+Module modul_koneksi
+    Public CONN As OleDbConnection
+    Public CMD As OleDbCommand
+    Public DR As OleDbDataReader
+    Public DA As OleDbDataAdapter
+    Public QUERY As String
+    Public DS As DataSet
+    Public DT As DataTable = New datatable()
+    Private DataGridView2 As Object
+
+
+    Sub KONEKSI()
+        QUERY = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\1\Jasapengiriman.accdb;Persist Security Info=False;"
+        CONN = New OleDbConnection(QUERY)
+        If CONN.State = ConnectionState.Closed Then
+            CONN.Open()
+        End If
+    End Sub
+
+    Sub KondisiAwal()
+        KONEKSI()
+        DA = New OleDbDataAdapter("Select * from data barang", CONN)
+        DS = New DataSet
+        DS.Clear()
+    End Sub
+
+    Sub tampilgrid()
+        DA = New OleDbDataAdapter("Select * from data barang", CONN)
+        DS = New DataSet
+        DA.Fill(DT)
+        Dim unused = DA.Fill(DT)
+        DataGridView2.DataBarangBindingSource = DT
+    End Sub
+
+
+End Module
+

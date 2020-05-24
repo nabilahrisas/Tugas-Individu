@@ -1,0 +1,42 @@
+Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Pengirimanbarang1.data_barang' table. You can move, or remove it, as needed.
+        Me.Data_barangTableAdapter.Fill(Me.Pengirimanbarang1.data_barang)
+
+    End Sub
+
+    Private Sub keluar_Click(sender As Object, e As EventArgs) Handles keluar.Click
+        End
+    End Sub
+
+    Private Sub simpan_Click(sender As Object, e As EventArgs) Handles simpan.Click
+        If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or
+        TextBox4.Text = "" Or TextBox5.Text = "" Or TextBox6.Text = "" Then
+            MsgBox("Data belum lengkap, Pastikan kode barang dan semua form terisi!")
+        Else
+            Call KONEKSI()
+            Dim simpandata As String = "insert into data barang values ('" & TextBox1.Text & "',
+             '" & TextBox2.Text & "', '" & TextBox3.Text & "', '" & TextBox4.Text & "', '" & TextBox5.Text & "'
+             '" & TextBox6.Text & "')"
+            CMD = New OleDb.OleDbCommand(simpandata, CONN)
+            MsgBox("Data berhasil di Input!", MsgBoxStyle.Information, "Information")
+            Call tampilgrid()
+        End If
+    End Sub
+
+    Private Sub hapus_Click(sender As Object, e As EventArgs) Handles hapus.Click
+        If TextBox1.Text = "" Then
+            MsgBox("Kode barang masih kosong, Silahkan diisi dulu!")
+            TextBox1.Focus()
+        Else
+            If MessageBox.Show("Yakin data akan dihapus?", "", MessageBoxButtons.YesNo) =
+                Windows.Forms.DialogResult.Yes Then
+                Dim hapusdata As String = "delete * From data barang Where kode_barang ='" & TextBox1.Text & ""
+                CMD = New OleDb.OleDbCommand(hapusdata, CONN)
+                MsgBox("Data berhasil di Hapus", MsgBoxStyle.Information, "Information")
+                Call KondisiAwal()
+            End If
+        End If
+    End Sub
+End Class
+
